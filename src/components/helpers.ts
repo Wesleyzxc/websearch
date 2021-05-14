@@ -10,7 +10,7 @@ export enum SearchEngines {
   "google" = "https://www.google.com/search?q=",
   "bing" = "https://www.bing.com/search?q=",
   "duckDuckGo" = "https://duckduckgo.com/?q=",
-  "yahoo" = "https://search.yahoo.com/search?p=asdfasdf",
+  "yahoo" = "https://search.yahoo.com/search?q=",
 }
 
 export function getQueryString(searchText: string): string {

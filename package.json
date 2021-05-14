@@ -10,13 +10,18 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:websearch.search"
+    "onCommand:websearch.searchSelected",
+    "onCommand:websearch.searchWeb"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "websearch.search",
+        "command": "websearch.searchSelected",
+        "title": "Search selected text"
+      },
+      {
+        "command": "websearch.searchWeb",
         "title": "Search the Web"
       }
     ],
@@ -24,7 +29,7 @@
       "editor/context": [
         {
           "when": "editorHasSelection",
-          "command": "websearch.search",
+          "command": "websearch.searchSelected",
           "group": "navigation"
         }
       ]
@@ -33,9 +38,9 @@
       "title": "Web Search Config",
       "type": "object",
       "properties": {
-        "search.QueryTemplate": {
+        "searchSelected.QueryTemplate": {
           "type": "string",
-          "default": "https://www.google.com/search?q=%SELECTION%",
+          "default": "https://www.google.com/search?q=",
           "description": "Search Query"
         }
       }

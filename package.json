@@ -11,18 +11,23 @@
   ],
   "activationEvents": [
     "onCommand:websearch.searchSelected",
-    "onCommand:websearch.searchWeb"
+    "onCommand:websearch.searchWeb",
+    "onCommand:websearch.configureViewOnWindowOpen"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
         "command": "websearch.searchSelected",
-        "title": "Search selected text"
+        "title": "Web Search: Search Selected Text"
       },
       {
         "command": "websearch.searchWeb",
-        "title": "Search the Web"
+        "title": "Web Search: Search The Web"
+      },
+      {
+        "command": "websearch.configureViewOnWindowOpen",
+        "title": "Web Search: Change Search Engine"
       }
     ],
     "menus": {
@@ -38,7 +43,7 @@
       "title": "Web Search Config",
       "type": "object",
       "properties": {
-        "searchSelected.QueryTemplate": {
+        "websearch.QueryTemplate": {
           "type": "string",
           "default": "https://www.google.com/search?q=",
           "description": "Search Query"

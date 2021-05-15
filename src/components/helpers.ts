@@ -1,17 +1,23 @@
 import { workspace } from "vscode";
 
+interface SearchEngineMap {
+  [name: string]: string;
+}
+
 // configs and commands to match package.json
 export const CFG_SEARCH_WEB = "searchWeb";
-export const CFG_SEARCH_SELECTED = "searchSelected";
+export const CFG_SEARCH_SELECTED = "websearch";
 export const CFG_PROPERTY = "QueryTemplate";
 export const DEFAULT_TEMPLATE = "https://www.google.com/search?q=";
 
-export enum SearchEngines {
-  "google" = "https://www.google.com/search?q=",
-  "bing" = "https://www.bing.com/search?q=",
-  "duckDuckGo" = "https://duckduckgo.com/?q=",
-  "yahoo" = "https://search.yahoo.com/search?q=",
-}
+export const SearchEngines: SearchEngineMap = {
+  Google: "https://www.google.com/search?q=",
+  Bing: "https://www.bing.com/search?q=",
+  DuckDuckGo: "https://duckduckgo.com/?q=",
+  Yahoo: "https://search.yahoo.com/search?q=",
+};
+
+export const SupportedSites = Object.keys(SearchEngines);
 
 export function getQueryString(searchText: string): string {
   const uriText = encodeURI(searchText);

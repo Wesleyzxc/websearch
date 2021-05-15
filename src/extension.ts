@@ -4,7 +4,6 @@ import searchSelected from "./components/searchSelected";
 import { setSearchEngine } from "./components/setSearchEngine";
 
 export function activate(context: vscode.ExtensionContext) {
-  // Example: Updating Window scoped configuration
   const setSearchEngineDisposable = vscode.commands.registerCommand("websearch.configureViewOnWindowOpen", setSearchEngine);
   const searchSelectedDisposable = vscode.commands.registerCommand("websearch.searchSelected", searchSelected);
   const searchInputdDisposable = vscode.commands.registerCommand("websearch.searchWeb", searchInput);

@@ -8,15 +8,15 @@ The idea was taken from [another repo](https://github.com/kameshkotwani/google-s
 
 Ability to search highlighted text:
 
-<p><img src="https://github.com/Wesleyzxc/websearch/blob/master/examples/search-selected.gif" alt="Search highlighted text" width="282px">
+<p><img src="https://github.com/Wesleyzxc/websearch/blob/master/resources/search-selected.gif" alt="Search highlighted text" width="282px">
 
 Ability to search input text:
 
-<p><img src="https://github.com/Wesleyzxc/websearch/blob/master/examples/search-input.gif" alt="Search input text" width="282px">
+<p><img src="https://github.com/Wesleyzxc/websearch/blob/master/resources/search-input.gif" alt="Search input text" width="282px">
 
 Supports various search engines:
 
-<p><img src="https://github.com/Wesleyzxc/websearch/blob/master/examples/update-search-engine.gif" alt="Update Search Engine" width="282px">
+<p><img src="https://github.com/Wesleyzxc/websearch/blob/master/resources/update-search-engine.gif" alt="Update Search Engine" width="282px">
 
 ## Extension Settings
 

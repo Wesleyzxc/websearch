@@ -2,9 +2,20 @@
   "name": "websearch",
   "displayName": "WebSearch",
   "description": "",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "publisher": "Wesley",
   "engines": {
     "vscode": "^1.56.0"
+  },
+  "author": {
+    "name": "Wesley",
+    "url": "https://www.github.com/wesleyzxc"
+  },
+  "icon": "resources/search.png",
+  "homepage": "https://www.github.com/Wesleyzxc/websearch",
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/Wesleyzxc/websearch"
   },
   "categories": [
     "Other"
